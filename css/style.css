@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: pink; /* Changed to a soft red background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slightly reduced shadow */
+    border-radius: 40px; /* Reduced border radius for a softer look */
+    padding: 10px 20px; /* Added padding for better spacing */
+}
+
+.header a {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agrega una sombra */  
+    color:#F1F4F5; /* Changed link color to a dark green */
+    margin-left: 20px; /* Added spacing between links */
+    transition: border 0.3s ease; /* Smooth color transition on hover */
+}
+.header a:hover {
+    border-bottom:4px solid white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.header .logo {
+    font-family: 'Charm', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* Changed link color to a dark green */
+    margin-left: 20px; /* Added spacing between links */
+    transition: border 0.3s ease; /* Smooth color transition on hover */
+}
+.header .logo:hover {
+    font-family: 'Charm', cursive;
+    border-bottom:4px solid white;
+
+}
+section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #2c2b47;
+    font-size: 70px;
+  }
+
+  #home{
+    background: #fff;
+    }
+  #about{
+    background: #f2f2f2;
+  }
+  #menu{
+    background: #e6e6e6;
+  }
+  #service{
+    background: #fff;
+  }
+  #contact{
+    background: #f2f2f2;
+  }
+
+.home{
+    min-height: 100vh;
+    display: flex;
+
+}
+
+.content-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+}
+
+.content-left h1{
+    font-size: 4rem;
+    color: lightseagreen;
+}
+.content-left p {
+    font-size: 3rem;
+}
+.content-right {
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.content-right img {
+    height: 33rem;
+}
+  
