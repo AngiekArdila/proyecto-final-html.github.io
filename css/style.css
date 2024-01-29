@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Open+Sans:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,100;1,100&display=swap');
 *{
@@ -54,19 +56,20 @@
 }
 section{
     display: flex;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     align-items: center;
     justify-content: center;
     color: #2c2b47;
     font-size: 70px;
+    padding: 10px;
   }
 
   #home{
-    background: #F1F8E9;
+    background-color: #76cc14;
     }
   #about{
-    background: white;
+    background-color: white;
   }
   #menu{
     background: rgb(255,206,236);
@@ -79,6 +82,7 @@ section{
   }
 
 .home{
+    background-color: aliceblue;
     min-height: 100vh;
     display: flex;
 
@@ -110,39 +114,74 @@ section{
 }
 
 .content-right img {
-    height: 26rem;
+    height: 39rem;
 }
 
-.about{
+#about {
     min-height: 100vh;
     display: flex;
-
 }
-
-.content2-left{
-    width:100%;
+.content2-right{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: right ;
-    gap:1.5rem;
+    justify-content: right;
+    gap: 1.5rem;
 }
-.content2-left h1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
-    color:rgb(113,206,126) ;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.content2-right img {
+    height: 23rem;
+    padding-left: 4rem;
+    padding-right:3rem;
 }
-.content2-left p {
-    font-family: 'Rozha One', serif;
-    color:#533913;
-    font-size: 3rem;
-    
+.content2-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 1.5rem;
 }
 
-.content2-left img {
-    height: 14rem;
-    display:flex;
+.content2-left h1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 3rem;
+    color: rgb(11, 11, 114);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+.content2-left p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(168, 93, 168);
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.custom-list {
+    font-family: 'Nanum Gothic', sans-serif;
+    list-style: none;
+    padding: 2rem;
+    color:#2c2b47;
+}
+
+.custom-list li {
+    margin-left: 1.5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:2rem;
+    position: relative;
+    color:#2c2b47;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.custom-list li:before {
+    content: "•";
+    color: #2e2d4d;
+    font-size: 1.5rem;
+    position: absolute;
+    left: -1.5rem;
+    top: 0.4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.077);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 
 .menu{
     min-height: 100vh;
@@ -150,36 +189,137 @@ section{
 
 }
 
-.content3-left{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: left ;
-    justify-content: right ;
-    gap:1.5rem;
-}
-.content3-left h1{
-    font-family: 'Rozha One', serif;
-    font-size: 3rem;
-    color: rgba(234, 113, 133, 0.979);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-.content3-left p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
-    color:#60687E;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-.content3-right {
-    width: 50%;
-    display: grid;
-    place-items: center;
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
 }
 
-.content3-right img {
-    height: 22rem;
-    border-radius: 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3)
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 98%;
+}
+.carousel-item h1{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding-left: 30%;
+    
+}
+
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-3 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
 
