@@ -72,7 +72,7 @@
     background: aliceblue;
   }
 
-.home{
+#home{
     background-color: aliceblue;
     min-height: 100vh;
     display: flex;
@@ -133,8 +133,10 @@ section{
 }
 .content2-right img {
     height: 23rem;
+    width: 40rem;
     padding-left: 4rem;
     padding-right:3rem;
+    border-radius: 15%;
 }
 .content2-left {
     width: 50%;
@@ -230,8 +232,8 @@ html, body {
     max-width: 80%;
 }
 .carousel-item h1{
-    font-family: 'Open Sans', sans-serif;
-    color: black;
+    font-family: sans-serif;
+    color: darkmagenta;
     font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     padding-left: 30%;
@@ -313,7 +315,14 @@ html, body {
 #carousel-4:checked ~ .control-3 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
     color: #428bca;
 }
-.service .content_leftservice{
+
+#service{
+    background-color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+
+}
+.content_leftservice{
     width: 50%;
     display: grid;
     flex-direction: column;
@@ -323,14 +332,14 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 
 }
-.service .content_leftservice p {
+.content_leftservice p {
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     font-family: 'Open Sans', sans-serif;
     color:#2e2d4d;
     }
 
-.service .content_rightservice{
+.content_rightservice{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -338,13 +347,13 @@ html, body {
     gap: 1.5rem;
 
 }
-.service .content_rightservice.img {
+ .content_rightservice.img {
     height: 19rem;
     padding-left: 4rem;
     padding-right:3rem;
 }
 
-.contact{
+#contact{
     background-color: aliceblue;
 }
 
@@ -364,44 +373,40 @@ html, body {
 }
 
 
-.contact .box-container {
+ .box-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
     gap: 1.5rem;
 }
-
-.contact .box-container .box {
+.box-container .box {
     padding: 1rem; /* Add padding to the boxes */
     background-color: rgba(255, 255, 255, 0.1); /* Add background color for better visibility */
 }
 
-.contact .box-container .box .content4-left,
-.contact .box-container .box .content4-center {
+.box-container .box .content4-left,
+.box-container .box .content4-center {
     padding: 1rem 0; /* Adjust padding as needed */
 }
 
-.contact .box-container .box h3 {
+ .box-container .box h3 {
     font-size: 2.5rem;
     padding: 1rem 0;
     color: rgb(168, 93, 168);
 }
 
-.contact .box-container .box a {
+ .box-container .box a {
     display: block;
     font-size: 1.5rem;
     padding: 1rem 0;
     color: darkblue;
 }
-
-.contact .box-container .box a i {
+.box-container .box a i {
     padding-right: 0.5rem;
 }
-
-.contact .box-container .box a:hover i {
+ .box-container .box a:hover i {
     padding-right: 2rem;
 }
-
-.contact .credit {
+.credit {
     text-align: center;
     font-size: 2rem;
     padding: 2rem 1rem;
@@ -409,9 +414,10 @@ html, body {
     color: var(--main-color);
 }
 
-.contact .credit {
+ .credit {
     text-align: center;
     font-size: 2rem;
+    font-weight: bold;
     padding: 2rem 0; /* Adjust padding to center vertically */
     margin-top: 1rem;
     color: var(--main-color-titles);
