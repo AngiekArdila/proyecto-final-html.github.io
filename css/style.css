@@ -65,7 +65,7 @@
     background-color: #76cc14;
     }
   #about{
-    background-color: white;
+    background-color: aliceblue;
   }
   #menu{
     background: rgb(255,206,236);
@@ -145,6 +145,7 @@ section{
     padding-left: 4rem;
     padding-right:3rem;
     border-radius: 12%;
+    box-shadow: 0 4px 8px rgba(150, 17, 17, 0.1);
 }
 .content2-left {
     width: 50%;
@@ -361,6 +362,7 @@ html, body {
     height: 17rem;
     padding-left: 4rem;
     padding-right:3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #contact{
