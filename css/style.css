@@ -49,6 +49,7 @@
     margin-left: 20px; /* Added spacing between links */
     transition: border 0.3s ease; /* Smooth color transition on hover */
 }
+
 .header .logo:hover {
     font-family: 'Charm', cursive;
     border-bottom:4px solid white;
