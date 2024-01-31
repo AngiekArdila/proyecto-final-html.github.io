@@ -17,7 +17,6 @@
     --border-hover:.2rem dashed var(--main-color-titles);
 
 }
-
 .header {
     position: fixed;
     top: 10px;
@@ -27,30 +26,26 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background: white; /* Changed to a soft red background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slightly reduced shadow */
-    border-radius: 40px; /* Reduced border radius for a softer look */
-    padding: 10px 20px; /* Added padding for better spacing */
+    background-color: #B11E5B; /* Darker header background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px; /* Reduced border radius */
+    padding: 15px 30px; /* Increased padding */
 }
 
 .header a {
-    
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agrega una sombra */  
-    color:  var(--main-color-titles); /* Changed link color to a dark green */
-    margin-left: 20px; /* Added spacing between links */
-    transition: border 0.3s ease; /* Smooth color transition on hover */
+    color: white; /* Changed link color to white */
+    font-size: 24px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 .header a:hover {
     border-bottom:4px solid white;
     font-family: 'Merriweather Sans', sans-serif;
 }
+
 .header .logo {
-    font-family: 'Charm', cursive;
-    font-size: 50px;
-    color:  var(--main-color-titles); /* Changed link color to a dark green */
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    color:  white; /* Changed link color to a dark green */
     margin-left: 20px; /* Added spacing between links */
     transition: border 0.3s ease; /* Smooth color transition on hover */
 }
@@ -74,7 +69,7 @@
     background: rgb(254, 205, 165);
   }
   #contact{
-    background: #EDE7F6;
+    background: aliceblue;
   }
 
 .home{
@@ -106,6 +101,7 @@ section{
 
 .content-left h1{
     font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
     color:   var(--main-color-titles);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -121,7 +117,7 @@ section{
 }
 
 .content-right img {
-    height: 39rem;
+    height: 30rem;
 }
 
 #about {
@@ -324,8 +320,15 @@ html, body {
     justify-content: right;
     gap: 1.5rem;
     font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
 
 }
+.service .content_leftservice p {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Open Sans', sans-serif;
+    color:#2e2d4d;
+    }
 
 .service .content_rightservice{
     width: 50%;
@@ -341,7 +344,9 @@ html, body {
     padding-right:3rem;
 }
 
-
+.contact{
+    background-color: aliceblue;
+}
 
 
 
