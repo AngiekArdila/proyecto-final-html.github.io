@@ -1,1 +1,1 @@
-#https://angiekardila.github.io/proyecto-final-html.github.io/#home
+#https://angiekardila.github.io/proyecto-final-html.github.io/
