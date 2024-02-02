@@ -18,7 +18,7 @@
 
 }
 .header {
-    background-color: #B11E5B;
+    background-color: var(--main-color-titles);
     color: #fff; 
     padding: 20px; 
     align-items: center;
@@ -26,6 +26,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     display: flex;
+    margin:15px;
     }
 
 .header a {
@@ -53,6 +54,13 @@
     font-family: 'Charm', cursive;
     border-bottom:4px solid white;
 
+}
+
+#menu-btn{
+    font-size: 3rem;
+    color:var(--main-color);
+    cursor: pointer;
+    display: none;
 }
 
 
@@ -87,7 +95,7 @@ section{
     justify-content: center;
     color: #2c2b47;
     font-size: 70px;
-    padding: 10px;
+    margin: 15px;
   }
 
 .content-left{
@@ -420,4 +428,132 @@ html, body {
     margin-top: 1rem;
     color: var(--main-color-titles);
     font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*TABLET MEDIA QUERY*/
+@media (max-width: 768px) {
+    .header {
+        margin: 15px; 
+    }
+    
+    #menu-btn{
+        display: initial;
+    }
+
+    #menu-btn.fa-times{
+        transform:rotate(180deg);
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background: var(--main-color-titles);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        font-size: 2.2rem;
+        margin:0;
+        padding:1.5rem 2rem;
+    }
+    .header .logo {
+        font-size: 24px; /* Reducir el tamaño del logo para dispositivos móviles */
+    }
+    .content-left .h1{
+        font-size: 2.5rem;
+     }
+    .content-left p {
+        font-size: 2rem;
+    }
+   .content-right img {
+        height: 17rem;
+        padding-right:1rem;
+    }
+    .content2-left h1 {
+        font-size: 2rem;
+    }
+    
+    .content2-left p {
+        font-size: 1.5rem;
+       
+    }
+    .content_leftservice p {
+        font-size: 1.5rem;
+    }
+    .content_leftservice{
+           
+            font-size: 2rem;
+    }    
+    
+    section{
+        width:97vw;
+    }
+    
+    .box-container .box a,h3 {
+        
+        font-size: 1rem;
+        
+    }
+    .credit {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 430px){
+    .header {
+        padding: 2px;
+        margin: 2px; 
+    }
+    .header .logo {
+        font-size: 20px; /* Reducir el tamaño del logo para dispositivos móviles */
+    }
+    .header  a{
+        font-size: 14px; /* Reducir el tamaño del logo para dispositivos móviles */
+    }
+    .content-left h1{
+        font-size:2rem;
+    }
+    .content-left p{
+        font-size:1.5rem;
+    }
+    .content-right img{
+        height:12rem;
+    }
+    section{
+        width:98vw;
+    }
+    .content2-left h1{
+     font-size:1.5rem;
+    }
+    .content2-left p{
+        font-size:1.5rem;
+    }
+    .content2-left li{
+        font-size:1.5rem;
+    }
+    .content2-right img{
+        width:11rem;
+        margin:1rem;
+    }
+    .carousel-bullet{
+        padding:5%;
+    }
+    .content_leftservice h1{
+        font-size:2rem;
+    }
+    .content-leftserive p{
+        font-size:1rem;
+    }
+    .content4-left h3{
+        font-size:1rem;
+    }
+    .credit{
+        font-size:1rem;
+    }
 }
