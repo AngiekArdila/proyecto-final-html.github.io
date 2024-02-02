@@ -237,12 +237,12 @@ html, body {
 .carousel-item img {
     display: block;
     height: auto;
-    max-width: 80%;
+    max-width: 100%;
 }
 .carousel-item h1{
     font-family: sans-serif;
     color: darkmagenta;
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     padding-left: 30%;
     
@@ -436,31 +436,6 @@ html, body {
         margin: 15px; 
     }
     
-    #menu-btn{
-        display: initial;
-    }
-
-    #menu-btn.fa-times{
-        transform:rotate(180deg);
-    }
-
-    .header .navbar{
-        position: absolute;
-        top:99%; left:0; right:0;
-        background: var(--main-color-titles);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    .header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    .header .navbar a{
-        display: block;
-        font-size: 2.2rem;
-        margin:0;
-        padding:1.5rem 2rem;
-    }
     .header .logo {
         font-size: 24px; /* Reducir el tamaño del logo para dispositivos móviles */
     }
