@@ -30,9 +30,9 @@
     }
 
 .header a {
-    color: white; /* Changed link color to white */
+    color: white;
     font-size: 20px;
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    transition: color 0.3s ease;
     letter-spacing: 2px; 
 }
 .header a:hover {
@@ -56,12 +56,7 @@
 
 }
 
-#menu-btn{
-    font-size: 3rem;
-    color:var(--main-color);
-    cursor: pointer;
-    display: none;
-}
+
 
 
   #home{
@@ -127,6 +122,7 @@ section{
 
 .content-right img {
     height: 23rem;
+    width: 22rem;
 }
 
 #about {
@@ -457,6 +453,15 @@ html, body {
         font-size: 1.5rem;
        
     }
+    .content2-right img{
+       
+        height: 14rem;
+    width: 21rem;
+    border-radius: 12%;
+    box-shadow: 0 4px 8px rgba(150, 17, 17, 0.1);
+}
+
+
     .content_leftservice p {
         font-size: 1.5rem;
     }
