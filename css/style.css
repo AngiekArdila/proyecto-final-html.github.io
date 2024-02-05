@@ -510,7 +510,7 @@ html, body {
     }
     .content-right img{
         height:12rem;
-        width:12rem;
+        width:13rem;
     }
     section{
         width: 100vw;
@@ -526,9 +526,9 @@ html, body {
         font-size:1.5rem;
     }
     .content2-right img{
-        width:14rem;
+        width:12rem;
         height:20rem;
-        box-shadow:paleturquoise;
+        box-shadow:poi;
         margin:1%;
     }
     .carousel-bullet{
