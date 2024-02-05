@@ -76,7 +76,7 @@
   }
 
 #home{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     min-height: 100vh;
     display: flex;
 
@@ -90,8 +90,8 @@ section{
     justify-content: center;
     color: #2c2b47;
     font-size: 70px;
-    margin: 15px;
-  }
+    margin:1px;
+}
 
 .content-left{
     width: 50%;
@@ -508,6 +508,7 @@ html, body {
     }
     section{
         width: 100vw;
+        margin:1px;
     }
     .content2-left h1{
      font-size:1.5rem;
