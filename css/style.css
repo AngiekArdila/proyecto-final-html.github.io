@@ -511,6 +511,7 @@ html, body {
     .content-right img{
         height:12rem;
         width:13rem;
+        box-shadow: none;
     }
     section{
         width: 100vw;
