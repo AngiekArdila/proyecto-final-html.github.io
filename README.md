@@ -23,14 +23,6 @@ I created this website for an ice cream shop, designed to provide a delightful a
   - **Services**: Details about additional services offered, such as catering or events.
   - **Contact**: Contact form and details for reaching out to the shop.
 
-## Screenshots
-
-![Home Section](screenshots/home.png)
-![About Section](screenshots/about.png)
-![Menu Section](screenshots/menu.png)
-![Services Section](screenshots/services.png)
-![Contact Section](screenshots/contact.png)
-
 ## I Really hope you enjoy my ice cream shop-website! 🍨🍦🍓🍫🍫💖
 Thanks 💗
 
